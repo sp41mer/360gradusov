@@ -5,9 +5,11 @@
 var cards;
 
 function show(cards){
-    cards.first().show();
-    cards.splice(0,1);
-
+    if (cards.length>0){
+        cards.first().show();
+        cards.splice(0,1);
+    }
+    else swal("Поля заполнены", "Оценка сохранена", "success");
 }
 
 $(document).ready(function(){
@@ -15,7 +17,6 @@ $(document).ready(function(){
     show(cards);
     $('.button-grid__button').click(function(){
         $(this).parent().parent().hide();
-        swal("Поля заполнены", "Оценка сохранена", "success");
         show(cards);
     });
 });

@@ -29,7 +29,7 @@ body{
     border: 1px solid #94bbce;
     background-color: aliceblue;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    display:none;
+    display: none;
 }
 
 .scoring-card__title{
